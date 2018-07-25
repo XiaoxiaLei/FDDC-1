@@ -13,8 +13,8 @@ https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.11409106.5678.1
 
 ### 算法思路：
 1、采用前馈神经网络的思想，选取反向传播算法快速下降代价函数的梯度，计算权重weights和偏置biases<br/>
-2、选用的代价函数为（label为标记信息，a为预测值，market为市值）：C = (1/2) * sum((label - a)**2 * log(max(market,2))<br/>
-3、选用的激活函数为：a = ln (1 + e**x)<br/>
+2、选用的代价函数为（label为标记信息，a为预测值，market为市值）：C = (1/2) * sum((label - a) ** 2 * log(max(market,2))<br/>
+3、选用的激活函数为：a = ln (1 + e ** x)<br/>
 4、代码执行过程中，会在各个迭代期结束后，输出测试集的以大赛标准执行的评估指标值，通过观察评估指标下降趋势选取最优的参数。
 
 ### 在终端运行的指令：
